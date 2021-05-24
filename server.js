@@ -1,15 +1,48 @@
-//Load HTTP module
-const http = require("http");
-const hostname = '127.0.0.1';
-const port = 3000;
-//Create HTTP server and listen on port 3000 for requests
-const server = http.createServer((req, res) => {
-  //Set the response HTTP header with HTTP status and Content type
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+// Dependencies
+// =============================================================
+const express = require('express');
+const path = require('path');
+const notes = require('./Develop/db/db');
+
+const app = express();
+const PORT = 3001;
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Routes
+// =============================================================
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './Develop/public/index.html'));
 });
-//listen for request on port 3000, and as a callback function have the port listened on logged
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
+});
+
+app.get('/api/notes', (req, res) => {
+  return res.json(notes);
+});
+
+app.post('/api/notes', (req, res) => {
+  const newNote = req.body;
+  console.log(newNote)
+
+  notes.push(newNote);
+  res.json(newNote);
+
+  
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+});
+
+
+// Listener
+// =============================================================
+app.listen(PORT, () => {
+  console.log(`App listening on PORT ${PORT}`);
 });
