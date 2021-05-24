@@ -28,8 +28,13 @@ app.post('/api/notes', (req, res) => {
   const newNote = req.body;
   console.log(newNote)
 
-  notes.push(newNote);
-  res.json(notes);  
+  // notes.push(newNote);
+  newNotes = fs.writeFileSync(
+    path.join(__dirname, './Develop/db/db.json'),
+    JSON.stringify({ newNote }, null, 2)
+  );
+
+  res.json(newNote);
 });
 
 app.get('/api/notes', (req, res) => {
@@ -42,9 +47,27 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './Develop/public/index.html'));
 });
 
+// function findById(title, notes) {
+//   const result = notes.filter(notes => notes.title === title)[0];
+//   return result;
+// }
+
+// function createNewAnimal(body, notes) {
+//   const note = body;
+//   notes.push(note);
+//   fs.writeFileSync(
+//     path.join(__dirname, './Develop/db/db.json'),
+//     JSON.stringify({ animals: notes }, null, 2)
+//   );
+//   return animal;
+// }
+
 
 // Listener
 // =============================================================
+// createNewAnimal();
+// findById();
+
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}`);
 });
