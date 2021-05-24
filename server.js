@@ -2,9 +2,11 @@
 // =============================================================
 const express = require('express');
 const path = require('path');
-const notes = require('./Develop/db/db');
+
 
 const app = express();
+const notes = require('./Develop/db/db');
+const fs = require('fs');
 const PORT = 3001;
 
 // Sets up the Express app to handle data parsing
@@ -31,8 +33,8 @@ app.post('/api/notes', (req, res) => {
   console.log(newNote)
 
   notes.push(newNote);
-  res.json(newNote);
-
+  res.json(notes);
+  
   
 });
 
