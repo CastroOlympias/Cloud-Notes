@@ -1,4 +1,6 @@
 {
-  "title": "Test ttt",
-  "text": "Test tttt"
+  "notes": {
+    "title": "abc123",
+    "text": "Test"
+  }
 }
