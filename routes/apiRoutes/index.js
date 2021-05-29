@@ -1,11 +1,12 @@
 const router = require("express").Router();
 const notes = require('../../db/db');
+const fs = require('fs');
 
 router.post('/notes', (req, res,) => {
     const newNote = req.body;
     console.log(newNote)
   
-    return res.json(newNote);
+    res.json(notes);
   });
   
   router.get('/notes', (req, res) => {
