@@ -24,7 +24,7 @@
 ## Usage
   Just press Get started, enter a title for your not and then jot down your notes, once done press the old floppy disk save icon in the upper right corner, and press the trash bin delete icon to remove notes.
 
-  Access the Cloud-Notes on Keroku https://dashboard.heroku.com/apps/castro-olympias-cloud-notes/deploy/github
+  Access the Cloud-Notes app on Keroku https://castro-olympias-cloud-notes.herokuapp.com/
 
 ## Authors
   Just myself.
