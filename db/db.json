@@ -19,6 +19,11 @@
       "title": "About this app",
       "text": "Everything works, almost superbly, There are two issues.\n\n1) the db.json file doesn't instantly update when deleting a note, not until you add a new note and save, then the the db.json file updates with  the current webapp notes.\n\n2) You can't edit notes. I'm not sure if the front end was designed to handle that. This would be considered an enhancement to get it added.",
       "id": "3"
+    },
+    {
+      "title": "sdfsdf",
+      "text": "sdfsdf",
+      "id": "4"
     }
   ]
 }
