@@ -1,59 +1,24 @@
 {
   "notes": [
     {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
+      "title": "This is my first note",
+      "text": "Try and enter new notes!",
       "id": "0"
     },
     {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
+      "title": "This is a second note",
+      "text": "Keep enter notes!",
       "id": "1"
     },
     {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
+      "title": "You can delete this note",
+      "text": "No, please don't delete me!",
       "id": "2"
     },
     {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
+      "title": "About this app",
+      "text": "Everything works, almost superbly, There are two issues.\n\n1) the db.json file doesn't instantly update when deleting a note, not until you add a new note and save, then the the db.json file updates with  the current webapp notes.\n\n2) You can't edit notes. I'm not sure if the front end was designed to handle that. This would be considered an enhancement to get it added.",
       "id": "3"
-    },
-    {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
-      "id": "4"
-    },
-    {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
-      "id": "5"
-    },
-    {
-      "title": "Tities my guy",
-      "text": "I like titties!",
-      "id": "6"
-    },
-    {
-      "title": "This is done minus the bonus",
-      "text": "Lets try to get some bonus\n",
-      "id": "7"
-    },
-    {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
-      "id": "8"
-    },
-    {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
-      "id": "9"
-    },
-    {
-      "title": "Test bttttbbb",
-      "text": "Test bbttttttbbb",
-      "id": "10"
     }
   ]
 }
