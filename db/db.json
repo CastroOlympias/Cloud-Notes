@@ -1,11 +1,6 @@
 {
   "notes": [
     {
-      "title": "This is my first note",
-      "text": "Try and enter new notes!",
-      "id": "0"
-    },
-    {
       "title": "This is a second note",
       "text": "Keep enter notes!",
       "id": "1"
@@ -33,6 +28,11 @@
     {
       "title": "this seems to have worked",
       "text": "You can delete this now",
+      "id": "6"
+    },
+    {
+      "title": "This is probably the last",
+      "text": "Last note? for testing",
       "id": "6"
     }
   ]
